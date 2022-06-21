@@ -1,0 +1,27 @@
+
+/* Class = "UILabel"; text = "Happy"; ObjectID = "1MC-bQ-x66"; */
+"1MC-bQ-x66.text" = "Happy";
+
+/* Class = "UIButton"; normalTitle = "Message"; ObjectID = "1nQ-CB-Bme"; */
+"1nQ-CB-Bme.normalTitle" = "Message";
+
+/* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "2EQ-50-DsD"; */
+"2EQ-50-DsD.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "UILabel"; text = "About"; ObjectID = "M3c-4k-Bi5"; */
+"M3c-4k-Bi5.text" = "About";
+
+/* Class = "UILabel"; text = "This how you've been lately"; ObjectID = "b6B-Ah-30S"; */
+"b6B-Ah-30S.text" = "This how you've been lately";
+
+/* Class = "UILabel"; text = "Hi,Mohamed"; ObjectID = "frg-FZ-Imf"; */
+"frg-FZ-Imf.text" = "Hi,Mohamed";
+
+/* Class = "UILabel"; text = " Now"; ObjectID = "jhg-zS-O9H"; */
+"jhg-zS-O9H.text" = " Now";
+
+/* Class = "UILabel"; text = "(5.0)"; ObjectID = "kg6-Fp-NqJ"; */
+"kg6-Fp-NqJ.text" = "(5.0)";
+
+/* Class = "UILabel"; text = "Dr. Sara Adam"; ObjectID = "n1K-Wg-XcN"; */
+"n1K-Wg-XcN.text" = "Dr. Sara Adam";

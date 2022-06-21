@@ -1,0 +1,1004 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A6EE8F6C209736CF2DD76DF /* Pods_Mentlia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F700A61873C29460E7B5F75E /* Pods_Mentlia.framework */; };
+		556AE63B285EAA41007D90AC /* ValidationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AE635285EAA41007D90AC /* ValidationManager.swift */; };
+		556AE63C285EAA41007D90AC /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AE636285EAA41007D90AC /* SignUpVC.swift */; };
+		556AE63D285EAA41007D90AC /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AE637285EAA41007D90AC /* SignUpPresenter.swift */; };
+		556AE63E285EAA41007D90AC /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AE639285EAA41007D90AC /* LoginVC.swift */; };
+		556AE63F285EAA41007D90AC /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AE63A285EAA41007D90AC /* LoginPresenter.swift */; };
+		556AE6A5285EAA6A007D90AC /* DashboardPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AE643285EAA68007D90AC /* DashboardPresenter.swift */; };
+		556AE6A6285EAA6A007D90AC /* XAxisDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AE645285EAA68007D90AC /* XAxisDataModel.swift */; };
+		556AE6A7285EAA6A007D90AC /* DayMoodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AE646285EAA68007D90AC /* DayMoodModel.swift */; };
+		556AE6A8285EAA6A007D90AC /* MontlyMoodCountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AE647285EAA68007D90AC /* MontlyMoodCountModel.swift */; };
+		556AE6A9285EAA6A007D90AC /* YAxisDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AE648285EAA68007D90AC /* YAxisDataModel.swift */; };
+		556AE6AA285EAA6A007D90AC /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AE64A285EAA68007D90AC /* DashboardVC.swift */; };
+		556AE6AB285EAA6A007D90AC /* DashboardInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AE64C285EAA68007D90AC /* DashboardInteractor.swift */; };
+		556AE6AC285EAA6A007D90AC /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AE64E285EAA68007D90AC /* TabBarController.swift */; };
+		556AE6AD285EAA6A007D90AC /* MoodAnalysisFirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AE650285EAA69007D90AC /* MoodAnalysisFirestoreManager.swift */; };
+		556AE6AF285EAA6A007D90AC /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AE652285EAA69007D90AC /* CacheManager.swift */; };
+		556AE6B0285EAA6A007D90AC /* UserInfoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AE653285EAA69007D90AC /* UserInfoManager.swift */; };
+		556AE6B2285EAA6A007D90AC /* AudioAnalyzerAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AE655285EAA69007D90AC /* AudioAnalyzerAPIManager.swift */; };
+		556AE6B4285EAA6A007D90AC /* JournalFirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AE657285EAA69007D90AC /* JournalFirestoreManager.swift */; };
+		556AE6B6285EAA6A007D90AC /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AE659285EAA69007D90AC /* AuthManager.swift */; };
+		556AE6B7285EAA6A007D90AC /* AuthFirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AE65A285EAA69007D90AC /* AuthFirestoreManager.swift */; };
+		556AE6B8285EAA6A007D90AC /* EditProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AE65D285EAA69007D90AC /* EditProfilePresenter.swift */; };
+		556AE6B9285EAA6A007D90AC /* EditProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AE65E285EAA69007D90AC /* EditProfileVC.swift */; };
+		556AE6BA285EAA6A007D90AC /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AE660285EAA69007D90AC /* ForgotPasswordVC.swift */; };
+		556AE6BB285EAA6A007D90AC /* ForgotPasswordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AE661285EAA69007D90AC /* ForgotPasswordPresenter.swift */; };
+		556AE6BC285EAA6A007D90AC /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AE663285EAA69007D90AC /* ProfileVC.swift */; };
+		556AE6BD285EAA6A007D90AC /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AE664285EAA69007D90AC /* ProfilePresenter.swift */; };
+		556AE6BE285EAA6A007D90AC /* TextJournalViewerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AE668285EAA69007D90AC /* TextJournalViewerPresenter.swift */; };
+		556AE6BF285EAA6A007D90AC /* TextJournalViewerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AE66A285EAA69007D90AC /* TextJournalViewerVC.swift */; };
+		556AE6C0285EAA6A007D90AC /* TextJournalViewerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AE66C285EAA69007D90AC /* TextJournalViewerInteractor.swift */; };
+		556AE6C1285EAA6A007D90AC /* JournalsHomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AE66F285EAA69007D90AC /* JournalsHomePresenter.swift */; };
+		556AE6C2285EAA6A007D90AC /* AudioJournalAnalyzerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AE671285EAA69007D90AC /* AudioJournalAnalyzerResponse.swift */; };
+		556AE6C3285EAA6A007D90AC /* JournalHomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AE672285EAA69007D90AC /* JournalHomeModel.swift */; };
+		556AE6C4285EAA6A007D90AC /* JournalHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AE674285EAA69007D90AC /* JournalHomeVC.swift */; };
+		556AE6C5285EAA6A007D90AC /* JournalHomeDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AE675285EAA69007D90AC /* JournalHomeDelegates.swift */; };
+		556AE6C6285EAA6A007D90AC /* JournalHomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AE676285EAA69007D90AC /* JournalHomeCollectionViewCell.swift */; };
+		556AE6C7285EAA6A007D90AC /* JournalHomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AE678285EAA69007D90AC /* JournalHomeInteractor.swift */; };
+		556AE6C8285EAA6A007D90AC /* AudioJournalPlayerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AE67B285EAA69007D90AC /* AudioJournalPlayerPresenter.swift */; };
+		556AE6C9285EAA6A007D90AC /* AudioJournalPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AE67C285EAA69007D90AC /* AudioJournalPlayer.swift */; };
+		556AE6CA285EAA6A007D90AC /* AudioJournalPlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AE67E285EAA69007D90AC /* AudioJournalPlayerVC.swift */; };
+		556AE6CB285EAA6A007D90AC /* AudioPlayerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AE680285EAA69007D90AC /* AudioPlayerInteractor.swift */; };
+		556AE6CC285EAA6A007D90AC /* TextJournalEditDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AE682285EAA69007D90AC /* TextJournalEditDelegates.swift */; };
+		556AE6CD285EAA6A007D90AC /* TextJournalInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AE683285EAA69007D90AC /* TextJournalInteractor.swift */; };
+		556AE6CE285EAA6A007D90AC /* TextJournalEditPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AE684285EAA69007D90AC /* TextJournalEditPresenter.swift */; };
+		556AE6CF285EAA6A007D90AC /* TextJournalEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AE685285EAA69007D90AC /* TextJournalEditVC.swift */; };
+		556AE6D0285EAA6A007D90AC /* JournalRecordingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AE689285EAA69007D90AC /* JournalRecordingPresenter.swift */; };
+		556AE6D1285EAA6A007D90AC /* AudioJournalRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AE68A285EAA69007D90AC /* AudioJournalRecorder.swift */; };
+		556AE6D2285EAA6A007D90AC /* AudioJournalRecordingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AE68C285EAA69007D90AC /* AudioJournalRecordingVC.swift */; };
+		556AE6D3285EAA6A007D90AC /* JournalRecordingDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AE68D285EAA69007D90AC /* JournalRecordingDelegates.swift */; };
+		556AE6D4285EAA6A007D90AC /* JournalRecordingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AE68F285EAA69007D90AC /* JournalRecordingInteractor.swift */; };
+		556AE6D5285EAA6A007D90AC /* AddJournalDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AE692285EAA69007D90AC /* AddJournalDetailsVC.swift */; };
+		556AE6D6285EAA6A007D90AC /* AddDetailsVCRenderViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AE693285EAA69007D90AC /* AddDetailsVCRenderViews.swift */; };
+		556AE6D7285EAA6A007D90AC /* AddJournalDetailsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AE694285EAA69007D90AC /* AddJournalDetailsProtocol.swift */; };
+		556AE6D8285EAA6A007D90AC /* AddJournalDetailsDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AE695285EAA69007D90AC /* AddJournalDetailsDelegates.swift */; };
+		556AE6D9285EAA6A007D90AC /* AddDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AE697285EAA69007D90AC /* AddDetailsPresenter.swift */; };
+		556AE6DA285EAA6A007D90AC /* FileManagerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AE699285EAA6A007D90AC /* FileManagerHelper.swift */; };
+		556AE6DB285EAA6A007D90AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 556AE69A285EAA6A007D90AC /* Assets.xcassets */; };
+		556AE6DC285EAA6A007D90AC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AE69B285EAA6A007D90AC /* Extensions.swift */; };
+		556AE6DD285EAA6A007D90AC /* String+Trimming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AE69C285EAA6A007D90AC /* String+Trimming.swift */; };
+		556AE6DE285EAA6A007D90AC /* ShowAlertsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AE69D285EAA6A007D90AC /* ShowAlertsManager.swift */; };
+		556AE6DF285EAA6A007D90AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AE69E285EAA6A007D90AC /* AppDelegate.swift */; };
+		556AE6E0285EAA6A007D90AC /* CircularStd-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 556AE6A0285EAA6A007D90AC /* CircularStd-Black.otf */; };
+		556AE6E1285EAA6A007D90AC /* CircularStd-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 556AE6A1285EAA6A007D90AC /* CircularStd-Bold.otf */; };
+		556AE6E2285EAA6A007D90AC /* CircularStd-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 556AE6A2285EAA6A007D90AC /* CircularStd-Medium.otf */; };
+		556AE6E3285EAA6A007D90AC /* CircularStd-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 556AE6A3285EAA6A007D90AC /* CircularStd-Light.otf */; };
+		556AE6E4285EAA6A007D90AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556AE6A4285EAA6A007D90AC /* SceneDelegate.swift */; };
+		5575B2452860F9F40017278E /* Main.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5575B23E2860F9F40017278E /* Main.strings */; };
+		5575B2462860F9F40017278E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5575B2402860F9F40017278E /* LaunchScreen.storyboard */; };
+		5575B2472860F9F40017278E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5575B2422860F9F40017278E /* Main.storyboard */; };
+		5575B2482860F9F40017278E /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5575B2442860F9F40017278E /* Auth.storyboard */; };
+		5575B24B2860FBC00017278E /* RecordingWaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5575B24A2860FBC00017278E /* RecordingWaveView.swift */; };
+		5575B3B32861047E0017278E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5575B3B22861047E0017278E /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1630C3D7959CFFC13A45C527 /* Pods-Mentlia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mentlia.debug.xcconfig"; path = "Target Support Files/Pods-Mentlia/Pods-Mentlia.debug.xcconfig"; sourceTree = "<group>"; };
+		556AE60D285E9A75007D90AC /* Mentlia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mentlia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		556AE61E285E9A7E007D90AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		556AE635285EAA41007D90AC /* ValidationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationManager.swift; sourceTree = "<group>"; };
+		556AE636285EAA41007D90AC /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		556AE637285EAA41007D90AC /* SignUpPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
+		556AE639285EAA41007D90AC /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		556AE63A285EAA41007D90AC /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		556AE643285EAA68007D90AC /* DashboardPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardPresenter.swift; sourceTree = "<group>"; };
+		556AE645285EAA68007D90AC /* XAxisDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XAxisDataModel.swift; sourceTree = "<group>"; };
+		556AE646285EAA68007D90AC /* DayMoodModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayMoodModel.swift; sourceTree = "<group>"; };
+		556AE647285EAA68007D90AC /* MontlyMoodCountModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MontlyMoodCountModel.swift; sourceTree = "<group>"; };
+		556AE648285EAA68007D90AC /* YAxisDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YAxisDataModel.swift; sourceTree = "<group>"; };
+		556AE64A285EAA68007D90AC /* DashboardVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
+		556AE64C285EAA68007D90AC /* DashboardInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardInteractor.swift; sourceTree = "<group>"; };
+		556AE64E285EAA68007D90AC /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		556AE650285EAA69007D90AC /* MoodAnalysisFirestoreManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoodAnalysisFirestoreManager.swift; sourceTree = "<group>"; };
+		556AE652285EAA69007D90AC /* CacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		556AE653285EAA69007D90AC /* UserInfoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoManager.swift; sourceTree = "<group>"; };
+		556AE655285EAA69007D90AC /* AudioAnalyzerAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioAnalyzerAPIManager.swift; sourceTree = "<group>"; };
+		556AE657285EAA69007D90AC /* JournalFirestoreManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalFirestoreManager.swift; sourceTree = "<group>"; };
+		556AE659285EAA69007D90AC /* AuthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		556AE65A285EAA69007D90AC /* AuthFirestoreManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthFirestoreManager.swift; sourceTree = "<group>"; };
+		556AE65D285EAA69007D90AC /* EditProfilePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfilePresenter.swift; sourceTree = "<group>"; };
+		556AE65E285EAA69007D90AC /* EditProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileVC.swift; sourceTree = "<group>"; };
+		556AE660285EAA69007D90AC /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
+		556AE661285EAA69007D90AC /* ForgotPasswordPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordPresenter.swift; sourceTree = "<group>"; };
+		556AE663285EAA69007D90AC /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		556AE664285EAA69007D90AC /* ProfilePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
+		556AE668285EAA69007D90AC /* TextJournalViewerPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextJournalViewerPresenter.swift; sourceTree = "<group>"; };
+		556AE66A285EAA69007D90AC /* TextJournalViewerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextJournalViewerVC.swift; sourceTree = "<group>"; };
+		556AE66C285EAA69007D90AC /* TextJournalViewerInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextJournalViewerInteractor.swift; sourceTree = "<group>"; };
+		556AE66F285EAA69007D90AC /* JournalsHomePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalsHomePresenter.swift; sourceTree = "<group>"; };
+		556AE671285EAA69007D90AC /* AudioJournalAnalyzerResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioJournalAnalyzerResponse.swift; sourceTree = "<group>"; };
+		556AE672285EAA69007D90AC /* JournalHomeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalHomeModel.swift; sourceTree = "<group>"; };
+		556AE674285EAA69007D90AC /* JournalHomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalHomeVC.swift; sourceTree = "<group>"; };
+		556AE675285EAA69007D90AC /* JournalHomeDelegates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalHomeDelegates.swift; sourceTree = "<group>"; };
+		556AE676285EAA69007D90AC /* JournalHomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalHomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		556AE678285EAA69007D90AC /* JournalHomeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalHomeInteractor.swift; sourceTree = "<group>"; };
+		556AE67B285EAA69007D90AC /* AudioJournalPlayerPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioJournalPlayerPresenter.swift; sourceTree = "<group>"; };
+		556AE67C285EAA69007D90AC /* AudioJournalPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioJournalPlayer.swift; sourceTree = "<group>"; };
+		556AE67E285EAA69007D90AC /* AudioJournalPlayerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioJournalPlayerVC.swift; sourceTree = "<group>"; };
+		556AE680285EAA69007D90AC /* AudioPlayerInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayerInteractor.swift; sourceTree = "<group>"; };
+		556AE682285EAA69007D90AC /* TextJournalEditDelegates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextJournalEditDelegates.swift; sourceTree = "<group>"; };
+		556AE683285EAA69007D90AC /* TextJournalInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextJournalInteractor.swift; sourceTree = "<group>"; };
+		556AE684285EAA69007D90AC /* TextJournalEditPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextJournalEditPresenter.swift; sourceTree = "<group>"; };
+		556AE685285EAA69007D90AC /* TextJournalEditVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextJournalEditVC.swift; sourceTree = "<group>"; };
+		556AE689285EAA69007D90AC /* JournalRecordingPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalRecordingPresenter.swift; sourceTree = "<group>"; };
+		556AE68A285EAA69007D90AC /* AudioJournalRecorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioJournalRecorder.swift; sourceTree = "<group>"; };
+		556AE68C285EAA69007D90AC /* AudioJournalRecordingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioJournalRecordingVC.swift; sourceTree = "<group>"; };
+		556AE68D285EAA69007D90AC /* JournalRecordingDelegates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalRecordingDelegates.swift; sourceTree = "<group>"; };
+		556AE68F285EAA69007D90AC /* JournalRecordingInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalRecordingInteractor.swift; sourceTree = "<group>"; };
+		556AE692285EAA69007D90AC /* AddJournalDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddJournalDetailsVC.swift; sourceTree = "<group>"; };
+		556AE693285EAA69007D90AC /* AddDetailsVCRenderViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddDetailsVCRenderViews.swift; sourceTree = "<group>"; };
+		556AE694285EAA69007D90AC /* AddJournalDetailsProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddJournalDetailsProtocol.swift; sourceTree = "<group>"; };
+		556AE695285EAA69007D90AC /* AddJournalDetailsDelegates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddJournalDetailsDelegates.swift; sourceTree = "<group>"; };
+		556AE697285EAA69007D90AC /* AddDetailsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddDetailsPresenter.swift; sourceTree = "<group>"; };
+		556AE699285EAA6A007D90AC /* FileManagerHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileManagerHelper.swift; sourceTree = "<group>"; };
+		556AE69A285EAA6A007D90AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		556AE69B285EAA6A007D90AC /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		556AE69C285EAA6A007D90AC /* String+Trimming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Trimming.swift"; sourceTree = "<group>"; };
+		556AE69D285EAA6A007D90AC /* ShowAlertsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowAlertsManager.swift; sourceTree = "<group>"; };
+		556AE69E285EAA6A007D90AC /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		556AE6A0285EAA6A007D90AC /* CircularStd-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Black.otf"; sourceTree = "<group>"; };
+		556AE6A1285EAA6A007D90AC /* CircularStd-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Bold.otf"; sourceTree = "<group>"; };
+		556AE6A2285EAA6A007D90AC /* CircularStd-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Medium.otf"; sourceTree = "<group>"; };
+		556AE6A3285EAA6A007D90AC /* CircularStd-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Light.otf"; sourceTree = "<group>"; };
+		556AE6A4285EAA6A007D90AC /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5575B23F2860F9F40017278E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		5575B2412860F9F40017278E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5575B2432860F9F40017278E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5575B2442860F9F40017278E /* Auth.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
+		5575B24A2860FBC00017278E /* RecordingWaveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordingWaveView.swift; sourceTree = "<group>"; };
+		5575B3B22861047E0017278E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7DCD7C2BDB33D11E91165590 /* Pods-Mentlia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mentlia.release.xcconfig"; path = "Target Support Files/Pods-Mentlia/Pods-Mentlia.release.xcconfig"; sourceTree = "<group>"; };
+		F700A61873C29460E7B5F75E /* Pods_Mentlia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mentlia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		556AE60A285E9A75007D90AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A6EE8F6C209736CF2DD76DF /* Pods_Mentlia.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		556AE604285E9A75007D90AC = {
+			isa = PBXGroup;
+			children = (
+				556AE60F285E9A75007D90AC /* Mentlia */,
+				556AE60E285E9A75007D90AC /* Products */,
+				F5035CC76768C457776F09D4 /* Pods */,
+				C0E9874D4B4504B28CA95233 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		556AE60E285E9A75007D90AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				556AE60D285E9A75007D90AC /* Mentlia.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		556AE60F285E9A75007D90AC /* Mentlia */ = {
+			isa = PBXGroup;
+			children = (
+				5575B3B22861047E0017278E /* GoogleService-Info.plist */,
+				556AE61E285E9A7E007D90AC /* Info.plist */,
+				5575B23D2860F9F40017278E /* Storyboards */,
+				556AE641285EAA68007D90AC /* Dashboard */,
+				556AE665285EAA69007D90AC /* Journal */,
+				556AE64F285EAA69007D90AC /* Managers */,
+				556AE65B285EAA69007D90AC /* Profile */,
+				556AE698285EAA6A007D90AC /* Resources */,
+				556AE64D285EAA68007D90AC /* TabBar */,
+				556AE633285EAA41007D90AC /* Auth */,
+			);
+			path = Mentlia;
+			sourceTree = "<group>";
+		};
+		556AE633285EAA41007D90AC /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				556AE634285EAA41007D90AC /* SignUp */,
+				556AE638285EAA41007D90AC /* Login */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		556AE634285EAA41007D90AC /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				556AE635285EAA41007D90AC /* ValidationManager.swift */,
+				556AE636285EAA41007D90AC /* SignUpVC.swift */,
+				556AE637285EAA41007D90AC /* SignUpPresenter.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		556AE638285EAA41007D90AC /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				556AE639285EAA41007D90AC /* LoginVC.swift */,
+				556AE63A285EAA41007D90AC /* LoginPresenter.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		556AE641285EAA68007D90AC /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				556AE642285EAA68007D90AC /* Presenter */,
+				556AE644285EAA68007D90AC /* Model */,
+				556AE649285EAA68007D90AC /* View */,
+				556AE64B285EAA68007D90AC /* Interactor */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		556AE642285EAA68007D90AC /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				556AE643285EAA68007D90AC /* DashboardPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		556AE644285EAA68007D90AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				556AE645285EAA68007D90AC /* XAxisDataModel.swift */,
+				556AE646285EAA68007D90AC /* DayMoodModel.swift */,
+				556AE647285EAA68007D90AC /* MontlyMoodCountModel.swift */,
+				556AE648285EAA68007D90AC /* YAxisDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		556AE649285EAA68007D90AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				556AE64A285EAA68007D90AC /* DashboardVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		556AE64B285EAA68007D90AC /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				556AE64C285EAA68007D90AC /* DashboardInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		556AE64D285EAA68007D90AC /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				556AE64E285EAA68007D90AC /* TabBarController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		556AE64F285EAA69007D90AC /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				556AE650285EAA69007D90AC /* MoodAnalysisFirestoreManager.swift */,
+				556AE652285EAA69007D90AC /* CacheManager.swift */,
+				556AE653285EAA69007D90AC /* UserInfoManager.swift */,
+				556AE655285EAA69007D90AC /* AudioAnalyzerAPIManager.swift */,
+				556AE657285EAA69007D90AC /* JournalFirestoreManager.swift */,
+				556AE659285EAA69007D90AC /* AuthManager.swift */,
+				556AE65A285EAA69007D90AC /* AuthFirestoreManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		556AE65B285EAA69007D90AC /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				556AE65C285EAA69007D90AC /* EditProfile */,
+				556AE65F285EAA69007D90AC /* ForgetPassword */,
+				556AE662285EAA69007D90AC /* Profile */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		556AE65C285EAA69007D90AC /* EditProfile */ = {
+			isa = PBXGroup;
+			children = (
+				556AE65D285EAA69007D90AC /* EditProfilePresenter.swift */,
+				556AE65E285EAA69007D90AC /* EditProfileVC.swift */,
+			);
+			path = EditProfile;
+			sourceTree = "<group>";
+		};
+		556AE65F285EAA69007D90AC /* ForgetPassword */ = {
+			isa = PBXGroup;
+			children = (
+				556AE660285EAA69007D90AC /* ForgotPasswordVC.swift */,
+				556AE661285EAA69007D90AC /* ForgotPasswordPresenter.swift */,
+			);
+			path = ForgetPassword;
+			sourceTree = "<group>";
+		};
+		556AE662285EAA69007D90AC /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				556AE663285EAA69007D90AC /* ProfileVC.swift */,
+				556AE664285EAA69007D90AC /* ProfilePresenter.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		556AE665285EAA69007D90AC /* Journal */ = {
+			isa = PBXGroup;
+			children = (
+				556AE666285EAA69007D90AC /* TextJournalViewer */,
+				556AE66D285EAA69007D90AC /* Journal Home  */,
+				556AE679285EAA69007D90AC /* AudioJournalPlayer */,
+				556AE681285EAA69007D90AC /* TextJournalEdit */,
+				556AE686285EAA69007D90AC /* AudioJournalRecording */,
+			);
+			path = Journal;
+			sourceTree = "<group>";
+		};
+		556AE666285EAA69007D90AC /* TextJournalViewer */ = {
+			isa = PBXGroup;
+			children = (
+				556AE667285EAA69007D90AC /* Presenter */,
+				556AE669285EAA69007D90AC /* View */,
+				556AE66B285EAA69007D90AC /* Interactor */,
+			);
+			path = TextJournalViewer;
+			sourceTree = "<group>";
+		};
+		556AE667285EAA69007D90AC /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				556AE668285EAA69007D90AC /* TextJournalViewerPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		556AE669285EAA69007D90AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				556AE66A285EAA69007D90AC /* TextJournalViewerVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		556AE66B285EAA69007D90AC /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				556AE66C285EAA69007D90AC /* TextJournalViewerInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		556AE66D285EAA69007D90AC /* Journal Home  */ = {
+			isa = PBXGroup;
+			children = (
+				556AE66E285EAA69007D90AC /* Presenter */,
+				556AE670285EAA69007D90AC /* Model */,
+				556AE673285EAA69007D90AC /* View */,
+				556AE677285EAA69007D90AC /* Interactor */,
+			);
+			path = "Journal Home ";
+			sourceTree = "<group>";
+		};
+		556AE66E285EAA69007D90AC /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				556AE66F285EAA69007D90AC /* JournalsHomePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		556AE670285EAA69007D90AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				556AE671285EAA69007D90AC /* AudioJournalAnalyzerResponse.swift */,
+				556AE672285EAA69007D90AC /* JournalHomeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		556AE673285EAA69007D90AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				556AE674285EAA69007D90AC /* JournalHomeVC.swift */,
+				556AE675285EAA69007D90AC /* JournalHomeDelegates.swift */,
+				556AE676285EAA69007D90AC /* JournalHomeCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		556AE677285EAA69007D90AC /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				556AE678285EAA69007D90AC /* JournalHomeInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		556AE679285EAA69007D90AC /* AudioJournalPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				556AE67A285EAA69007D90AC /* Presenter */,
+				556AE67D285EAA69007D90AC /* View */,
+				556AE67F285EAA69007D90AC /* Interactor */,
+			);
+			path = AudioJournalPlayer;
+			sourceTree = "<group>";
+		};
+		556AE67A285EAA69007D90AC /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				556AE67B285EAA69007D90AC /* AudioJournalPlayerPresenter.swift */,
+				556AE67C285EAA69007D90AC /* AudioJournalPlayer.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		556AE67D285EAA69007D90AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				556AE67E285EAA69007D90AC /* AudioJournalPlayerVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		556AE67F285EAA69007D90AC /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				556AE680285EAA69007D90AC /* AudioPlayerInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		556AE681285EAA69007D90AC /* TextJournalEdit */ = {
+			isa = PBXGroup;
+			children = (
+				556AE682285EAA69007D90AC /* TextJournalEditDelegates.swift */,
+				556AE683285EAA69007D90AC /* TextJournalInteractor.swift */,
+				556AE684285EAA69007D90AC /* TextJournalEditPresenter.swift */,
+				556AE685285EAA69007D90AC /* TextJournalEditVC.swift */,
+			);
+			path = TextJournalEdit;
+			sourceTree = "<group>";
+		};
+		556AE686285EAA69007D90AC /* AudioJournalRecording */ = {
+			isa = PBXGroup;
+			children = (
+				556AE687285EAA69007D90AC /* JournalRecording */,
+				556AE690285EAA69007D90AC /* AddJournalDetails */,
+			);
+			path = AudioJournalRecording;
+			sourceTree = "<group>";
+		};
+		556AE687285EAA69007D90AC /* JournalRecording */ = {
+			isa = PBXGroup;
+			children = (
+				556AE688285EAA69007D90AC /* Presenter */,
+				556AE68B285EAA69007D90AC /* View */,
+				556AE68E285EAA69007D90AC /* Interactor */,
+			);
+			path = JournalRecording;
+			sourceTree = "<group>";
+		};
+		556AE688285EAA69007D90AC /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				556AE689285EAA69007D90AC /* JournalRecordingPresenter.swift */,
+				556AE68A285EAA69007D90AC /* AudioJournalRecorder.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		556AE68B285EAA69007D90AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5575B24A2860FBC00017278E /* RecordingWaveView.swift */,
+				556AE68C285EAA69007D90AC /* AudioJournalRecordingVC.swift */,
+				556AE68D285EAA69007D90AC /* JournalRecordingDelegates.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		556AE68E285EAA69007D90AC /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				556AE68F285EAA69007D90AC /* JournalRecordingInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		556AE690285EAA69007D90AC /* AddJournalDetails */ = {
+			isa = PBXGroup;
+			children = (
+				556AE691285EAA69007D90AC /* View */,
+				556AE696285EAA69007D90AC /* Presneter */,
+			);
+			path = AddJournalDetails;
+			sourceTree = "<group>";
+		};
+		556AE691285EAA69007D90AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				556AE692285EAA69007D90AC /* AddJournalDetailsVC.swift */,
+				556AE693285EAA69007D90AC /* AddDetailsVCRenderViews.swift */,
+				556AE694285EAA69007D90AC /* AddJournalDetailsProtocol.swift */,
+				556AE695285EAA69007D90AC /* AddJournalDetailsDelegates.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		556AE696285EAA69007D90AC /* Presneter */ = {
+			isa = PBXGroup;
+			children = (
+				556AE697285EAA69007D90AC /* AddDetailsPresenter.swift */,
+			);
+			path = Presneter;
+			sourceTree = "<group>";
+		};
+		556AE698285EAA6A007D90AC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				556AE699285EAA6A007D90AC /* FileManagerHelper.swift */,
+				556AE69A285EAA6A007D90AC /* Assets.xcassets */,
+				556AE69B285EAA6A007D90AC /* Extensions.swift */,
+				556AE69C285EAA6A007D90AC /* String+Trimming.swift */,
+				556AE69D285EAA6A007D90AC /* ShowAlertsManager.swift */,
+				556AE69E285EAA6A007D90AC /* AppDelegate.swift */,
+				556AE69F285EAA6A007D90AC /* Fonts */,
+				556AE6A4285EAA6A007D90AC /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		556AE69F285EAA6A007D90AC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				556AE6A0285EAA6A007D90AC /* CircularStd-Black.otf */,
+				556AE6A1285EAA6A007D90AC /* CircularStd-Bold.otf */,
+				556AE6A2285EAA6A007D90AC /* CircularStd-Medium.otf */,
+				556AE6A3285EAA6A007D90AC /* CircularStd-Light.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		5575B23D2860F9F40017278E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				5575B23E2860F9F40017278E /* Main.strings */,
+				5575B2402860F9F40017278E /* LaunchScreen.storyboard */,
+				5575B2422860F9F40017278E /* Main.storyboard */,
+				5575B2442860F9F40017278E /* Auth.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C0E9874D4B4504B28CA95233 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F700A61873C29460E7B5F75E /* Pods_Mentlia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F5035CC76768C457776F09D4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1630C3D7959CFFC13A45C527 /* Pods-Mentlia.debug.xcconfig */,
+				7DCD7C2BDB33D11E91165590 /* Pods-Mentlia.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		556AE60C285E9A75007D90AC /* Mentlia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 556AE621285E9A7E007D90AC /* Build configuration list for PBXNativeTarget "Mentlia" */;
+			buildPhases = (
+				236FB3CC89F9CA7DBFC1D032 /* [CP] Check Pods Manifest.lock */,
+				556AE609285E9A75007D90AC /* Sources */,
+				556AE60A285E9A75007D90AC /* Frameworks */,
+				556AE60B285E9A75007D90AC /* Resources */,
+				B71F4935601D7F030C2D8634 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mentlia;
+			productName = Mentlia;
+			productReference = 556AE60D285E9A75007D90AC /* Mentlia.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		556AE605285E9A75007D90AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					556AE60C285E9A75007D90AC = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 556AE608285E9A75007D90AC /* Build configuration list for PBXProject "Mentlia" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 556AE604285E9A75007D90AC;
+			productRefGroup = 556AE60E285E9A75007D90AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				556AE60C285E9A75007D90AC /* Mentlia */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		556AE60B285E9A75007D90AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5575B2462860F9F40017278E /* LaunchScreen.storyboard in Resources */,
+				5575B2482860F9F40017278E /* Auth.storyboard in Resources */,
+				556AE6E0285EAA6A007D90AC /* CircularStd-Black.otf in Resources */,
+				556AE6E1285EAA6A007D90AC /* CircularStd-Bold.otf in Resources */,
+				556AE6DB285EAA6A007D90AC /* Assets.xcassets in Resources */,
+				5575B2452860F9F40017278E /* Main.strings in Resources */,
+				5575B2472860F9F40017278E /* Main.storyboard in Resources */,
+				5575B3B32861047E0017278E /* GoogleService-Info.plist in Resources */,
+				556AE6E3285EAA6A007D90AC /* CircularStd-Light.otf in Resources */,
+				556AE6E2285EAA6A007D90AC /* CircularStd-Medium.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		236FB3CC89F9CA7DBFC1D032 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mentlia-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B71F4935601D7F030C2D8634 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mentlia/Pods-Mentlia-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mentlia/Pods-Mentlia-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Mentlia/Pods-Mentlia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		556AE609285E9A75007D90AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				556AE6D3285EAA6A007D90AC /* JournalRecordingDelegates.swift in Sources */,
+				556AE6CF285EAA6A007D90AC /* TextJournalEditVC.swift in Sources */,
+				556AE6B6285EAA6A007D90AC /* AuthManager.swift in Sources */,
+				556AE6C3285EAA6A007D90AC /* JournalHomeModel.swift in Sources */,
+				556AE63D285EAA41007D90AC /* SignUpPresenter.swift in Sources */,
+				556AE6BC285EAA6A007D90AC /* ProfileVC.swift in Sources */,
+				556AE6D5285EAA6A007D90AC /* AddJournalDetailsVC.swift in Sources */,
+				556AE6AC285EAA6A007D90AC /* TabBarController.swift in Sources */,
+				556AE63C285EAA41007D90AC /* SignUpVC.swift in Sources */,
+				556AE6CD285EAA6A007D90AC /* TextJournalInteractor.swift in Sources */,
+				556AE6A9285EAA6A007D90AC /* YAxisDataModel.swift in Sources */,
+				556AE6B4285EAA6A007D90AC /* JournalFirestoreManager.swift in Sources */,
+				556AE6BD285EAA6A007D90AC /* ProfilePresenter.swift in Sources */,
+				556AE6D7285EAA6A007D90AC /* AddJournalDetailsProtocol.swift in Sources */,
+				556AE63E285EAA41007D90AC /* LoginVC.swift in Sources */,
+				556AE6AA285EAA6A007D90AC /* DashboardVC.swift in Sources */,
+				556AE6CB285EAA6A007D90AC /* AudioPlayerInteractor.swift in Sources */,
+				556AE6D2285EAA6A007D90AC /* AudioJournalRecordingVC.swift in Sources */,
+				556AE6CC285EAA6A007D90AC /* TextJournalEditDelegates.swift in Sources */,
+				556AE6A8285EAA6A007D90AC /* MontlyMoodCountModel.swift in Sources */,
+				556AE6B8285EAA6A007D90AC /* EditProfilePresenter.swift in Sources */,
+				556AE6B9285EAA6A007D90AC /* EditProfileVC.swift in Sources */,
+				556AE6A7285EAA6A007D90AC /* DayMoodModel.swift in Sources */,
+				556AE6C5285EAA6A007D90AC /* JournalHomeDelegates.swift in Sources */,
+				556AE6BA285EAA6A007D90AC /* ForgotPasswordVC.swift in Sources */,
+				556AE6B7285EAA6A007D90AC /* AuthFirestoreManager.swift in Sources */,
+				556AE6AD285EAA6A007D90AC /* MoodAnalysisFirestoreManager.swift in Sources */,
+				556AE6C1285EAA6A007D90AC /* JournalsHomePresenter.swift in Sources */,
+				556AE6C0285EAA6A007D90AC /* TextJournalViewerInteractor.swift in Sources */,
+				556AE6DA285EAA6A007D90AC /* FileManagerHelper.swift in Sources */,
+				556AE6C9285EAA6A007D90AC /* AudioJournalPlayer.swift in Sources */,
+				556AE6DE285EAA6A007D90AC /* ShowAlertsManager.swift in Sources */,
+				556AE6B0285EAA6A007D90AC /* UserInfoManager.swift in Sources */,
+				556AE6D8285EAA6A007D90AC /* AddJournalDetailsDelegates.swift in Sources */,
+				556AE6C4285EAA6A007D90AC /* JournalHomeVC.swift in Sources */,
+				556AE6DF285EAA6A007D90AC /* AppDelegate.swift in Sources */,
+				556AE6D4285EAA6A007D90AC /* JournalRecordingInteractor.swift in Sources */,
+				5575B24B2860FBC00017278E /* RecordingWaveView.swift in Sources */,
+				556AE6A6285EAA6A007D90AC /* XAxisDataModel.swift in Sources */,
+				556AE63B285EAA41007D90AC /* ValidationManager.swift in Sources */,
+				556AE6D1285EAA6A007D90AC /* AudioJournalRecorder.swift in Sources */,
+				556AE6AF285EAA6A007D90AC /* CacheManager.swift in Sources */,
+				556AE6B2285EAA6A007D90AC /* AudioAnalyzerAPIManager.swift in Sources */,
+				556AE6C8285EAA6A007D90AC /* AudioJournalPlayerPresenter.swift in Sources */,
+				556AE6CE285EAA6A007D90AC /* TextJournalEditPresenter.swift in Sources */,
+				556AE6BB285EAA6A007D90AC /* ForgotPasswordPresenter.swift in Sources */,
+				556AE6C6285EAA6A007D90AC /* JournalHomeCollectionViewCell.swift in Sources */,
+				556AE6D6285EAA6A007D90AC /* AddDetailsVCRenderViews.swift in Sources */,
+				556AE63F285EAA41007D90AC /* LoginPresenter.swift in Sources */,
+				556AE6A5285EAA6A007D90AC /* DashboardPresenter.swift in Sources */,
+				556AE6AB285EAA6A007D90AC /* DashboardInteractor.swift in Sources */,
+				556AE6D9285EAA6A007D90AC /* AddDetailsPresenter.swift in Sources */,
+				556AE6E4285EAA6A007D90AC /* SceneDelegate.swift in Sources */,
+				556AE6BE285EAA6A007D90AC /* TextJournalViewerPresenter.swift in Sources */,
+				556AE6DD285EAA6A007D90AC /* String+Trimming.swift in Sources */,
+				556AE6CA285EAA6A007D90AC /* AudioJournalPlayerVC.swift in Sources */,
+				556AE6DC285EAA6A007D90AC /* Extensions.swift in Sources */,
+				556AE6C7285EAA6A007D90AC /* JournalHomeInteractor.swift in Sources */,
+				556AE6D0285EAA6A007D90AC /* JournalRecordingPresenter.swift in Sources */,
+				556AE6C2285EAA6A007D90AC /* AudioJournalAnalyzerResponse.swift in Sources */,
+				556AE6BF285EAA6A007D90AC /* TextJournalViewerVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5575B23E2860F9F40017278E /* Main.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5575B23F2860F9F40017278E /* en */,
+			);
+			name = Main.strings;
+			sourceTree = "<group>";
+		};
+		5575B2402860F9F40017278E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5575B2412860F9F40017278E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5575B2422860F9F40017278E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5575B2432860F9F40017278E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		556AE61F285E9A7E007D90AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		556AE620285E9A7E007D90AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		556AE622285E9A7E007D90AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1630C3D7959CFFC13A45C527 /* Pods-Mentlia.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TCD4XHJF85;
+				INFOPLIST_FILE = Mentlia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.sliem.Mentlia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		556AE623285E9A7E007D90AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DCD7C2BDB33D11E91165590 /* Pods-Mentlia.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TCD4XHJF85;
+				INFOPLIST_FILE = Mentlia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.sliem.Mentlia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		556AE608285E9A75007D90AC /* Build configuration list for PBXProject "Mentlia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				556AE61F285E9A7E007D90AC /* Debug */,
+				556AE620285E9A7E007D90AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		556AE621285E9A7E007D90AC /* Build configuration list for PBXNativeTarget "Mentlia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				556AE622285E9A7E007D90AC /* Debug */,
+				556AE623285E9A7E007D90AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 556AE605285E9A75007D90AC /* Project object */;
+}
