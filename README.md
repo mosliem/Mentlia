@@ -24,6 +24,8 @@
 - Sync analysis results with Firebase and user account.
 - Dashboard with realtime updates for analysis results.
 
+### Screens
+
 
 
 
