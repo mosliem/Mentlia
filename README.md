@@ -5,6 +5,9 @@
  This is an iOS application built with UIKit for mood tracking and mental health. It tracks users' moods by analyzing their audio and text journals. It also provides a mood statistics dashboard for real-time mood updates.
 
 
+### App Designs 
+<img src="https://github.com/mosliem/Cooksy/blob/main/Screens/launchScreen.png" width="300" height="600" /> 
+
 ### Built with
 
 - UIkit
@@ -24,7 +27,6 @@
 - Sync analysis results with Firebase and user account.
 - Dashboard with realtime updates for analysis results.
 
-### Screens
 
 
 
