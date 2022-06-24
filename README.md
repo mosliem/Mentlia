@@ -6,7 +6,7 @@
 
 
 ### App Designs 
-<img src="https://github.com/mosliem/Cooksy/blob/main/Screens/launchScreen.png" width="300" height="600" /> 
+<img src="https://https://github.com/mosliem/Mentlia/main/combine_images%20(1).jpg" width="300" height="300" /> 
 
 ### Built with
 
