@@ -8,7 +8,7 @@
 
 
 ### App Designs 
-   <img src="https://github.com/mosliem/Mentlia/blob/main/screenshot/app_design.jpg" width="800" height="1000" /> 
+   <img src="https://github.com/mosliem/Mentlia/blob/main/screenshot/app_design.jpg" /> 
 
 ### Built with
 
